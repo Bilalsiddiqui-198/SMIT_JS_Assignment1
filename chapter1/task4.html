@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+           
+        }
+
+        .customAlert{
+            display: none;
+            position: fixed; 
+            top: 13%;
+            left: 50%;
+            height: 200px;
+            padding-top: 15px;
+            width: 400px;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding-left: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px gray;
+          
+        }
+        button {
+            width: 80px;
+            background-color: white;
+            height: 30px;
+            border: 1px solid black;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+        }
+         .customAlert h1{
+            font-weight: 200;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div id="overlay"></div>
+    <div id="customAlert1" class="customAlert">
+        <h1>Java Script Alert</h1>
+        <p>Welcome to Js Land..</p>
+        <button  onclick="showNextAlert()">OK</button>
+    </div>
+    <div id="customAlert2" class="customAlert">
+        <h1>Java Script Alert</h1>
+        <p>Happy Coding!</p>
+        <input type="checkbox"  id="checkbox"> <label  for="checkbox">Prevent this page from creating additional dialogs.</label><br><br>
+        <button  onclick="closeAllAlerts()">OK</button>
+    </div>
+
+<script src="task4.js"></script>
+    
+</body>
+</html>
